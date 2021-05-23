@@ -10,6 +10,10 @@ set expandtab
 let g:ale_linters = {'rust': ['analyzer']}
 " End ALE Stuff
 
+" Appearances
+set showcmd
+set number
+set numberwidth=4
 syntax on
 highlight SpellBad term=reverse ctermfg=15 ctermbg=9 gui=undercurl guisp=Red
 highlight SpellCap term=reverse ctermfg=15 ctermbg=12 gui=undercurl guisp=Blue
