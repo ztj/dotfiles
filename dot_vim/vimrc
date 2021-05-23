@@ -1,10 +1,14 @@
 set nocompatible              " be iMproved, required
 
 " Begin ALE Stuff
-" let g:ale_linters = {'rust': ['analyzer']}
+let g:ale_linters = {'rust': ['analyzer']}
 " End ALE Stuff
 
 syntax on
 highlight SpellBad term=reverse ctermfg=15 ctermbg=9 gui=undercurl guisp=Red
 highlight SpellCap term=reverse ctermfg=15 ctermbg=12 gui=undercurl guisp=Blue
+
+" Needs to be at the end
+packloadall
+silent! helptags ALL
 
