@@ -1,0 +1,16 @@
+if [ -f ~/.bashrc ];
+then
+    . ~/.bashrc
+fi
+
+export CLICOLOR=true
+
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+export PATH="/opt/homebrew/bin:$PATH"
+
+export PATH="/Users/ztj/.local/bin:$PATH"
+
+. "$HOME/.cargo/env"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
