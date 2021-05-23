@@ -1,4 +1,10 @@
 set nocompatible              " be iMproved, required
+filetype plugin indent on
+
+" my tabs!
+set tabstop=4 
+set shiftwidth=4
+set expandtab
 
 " Begin ALE Stuff
 let g:ale_linters = {'rust': ['analyzer']}
